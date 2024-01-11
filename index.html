@@ -1,57 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-<h1>my name Misha   
-</h1> 
-<p> i am 17 years old </p>
-  <p> i live in Nederlands</p>  
-  <p>i  am from Ukrainian</p>
-<p>i live with 2 friends  </p>
-<p>my mother live in Ukrainian </p>
-<p>we live in a small city Deventr </p>
-<a href="https://www.youtube.com/">watching youtube </a>
+  <header>
+    <div class="logo-container">
 
-<h1 style="background-color:powderblue;">my name Misha</h1>
-<strong>i m from Ukrainian</strong> 
-<!--i m like play football-->
-<p i m lerning Deutch></p>
-<h1 style="background-color:violet;">my name Misha</h1>
-<p style="background-color:navy;">i live in Nederlands</p>
-<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+      <img src="./img/logo.png" alt="logo" class="logo">
+      <div class="text-container">
+        <p class="text-starting">
+          Starting
+        </p>
+        <p class="text-help">
+          help
+        </p>
+      </div>
+
+    </div>
+
+    </div>
+    <ul class="menu">
+      <li><a href="#"><img src="./img/fb.png" alt="facebook img"></a></li>
+      <li><a href="#"><img src="./img/Instagram.png" alt="Instagram img"></a></li>
+      <li><a href="#"><span>Звязатись</span><img src="./img/icon_nest.png" alt="icon_nest img"></a></li>
+    </ul>
+  </header>
+
+  <div class="section-1">
+    <h1>Підтримайте благодійність </h1>
+    <h2>Ми вже почали допомогати </h2>
+    <h3>Допоможіть і Ви</h3>
+    <ul>
+      <li>Допомогаємо діткам , які знаходяться в дитячому</li>
+      <li>будинки і дітям , які вимушено покинули свої </li>
+      <li>будинки внаслыдок выйни </li>
+      <li>Допомогаємо людям похилого віку, які</li>
+      <li>знаходяться в пенсіонаті</li>
+      <li>Допомогаємо адресно людям , які надають запити</li>
+    </ul>
+    <div class="button-container">
+      <button class="help-bth">Допомогти</button>
+      <button class="get-help-bth"> Отримати допомогу</button>
+
+    </div>
+
+  </div>
+  <div class="section-2">
+    <h1>Фотозвіт</h1>
+    <ul>
+      <li>Lorem ipsum passages, and more recently with desktop publishing</li>
+      <li>software like Aldus PageMaker including versions of Lorem ipsum</li>
+      <li>Lorem impsum passages , and more recently with desktop publishing</li>
+      <li>software like Aldus PageMaker including</li>
+    </ul>
+
+  </div>
 
 
-<table>
-  <tr>
-    <th>name</th>
-    <th>surname</th>
-    <th>Email</th>
-    <th>Country</th>
-    <th>Years</th>
-  </tr>
-  <tr>
-   <td>Misha</td>
-   <td>Gren</td>
-   <td>grenmisha21@gmail.com</td>
-   <td>Ukraine</td>
-   <td>17</td>
-  </tr>
-  <tr>
-    <td>Lida</td>
-    <td>Sevcova</td>
-    <td>sevcova8@gmail.com</td>
-    <td>Ukraine</td>
-    <td>52</td>
-  </tr>
-</table>
+  </div>
+  <ul class="photo-list">
+    <li class="photo-list-item"><a href="#"><img src="./img/Image (4).png" alt="photo.clothes"></a></li>
+    <li class="photo-list-item"><a href="#"><img src="./img/Image (5).png" alt="photo.telefone"></a></li>
+    <li class="photo-list-item"><a href="#"><img src="./img/Image (1).png" alt="photo.png"></a></li>
+    <li class="photo-list-item"><a href="#"><img src="./img/Image (3).png" alt="photo.jacket"></a></li>
+    <li class="photo-list-item"><a href="#"><img src="./img/Image (2).png" alt="photo.telefone"></a></li>
+    <li class="photo-list-item">
+      <div class="description-photo-list-container">
+        <h1>Звіт за 21.05.2022</h1>
+        <ul class="description-photo-list">
 
+          <li>допомога дитячому садку</li>
+          <li>допомога центру</li>
+          <li>допомога переселенцям </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <div class="feedback-form">
+    <p>потрібна допомога чи можете допомогти?</p>
+
+    <h1 class="title"> Ми раді почути Вас!</h1>
+
+    <div class="information">
+
+      <form>
+        <div class="row-inputes">
+          <div class="input-container">
+            <label for="username">Призвіще та Імя</label><br>
+            <input type="text" id="username" name="username" value="Петренко Василь"><br>
+          </div>
+          <div class="input-container">
+            <label for="e-mail">e-mail</label><br>
+            <input type="text" id="username" name="username" value="v.petrenko@gmail.com"><br>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="your-messenge">Ваше повідомлення</label><br>
+          <input type="text" id="username" name="messenge" value="Потрібна допомога "><br>
+      </form>
+    </div>
+    <div class="button-send">
+      <button class="send">відправити</button>
+    </div>
+  </div>
 
 </body>
+
 </html>
