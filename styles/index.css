@@ -211,16 +211,17 @@ header {
 }
 
 .feedback-form p {
-    color:  #929A9F;
+    color: #929A9F;
     text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; 
+    line-height: 20px;
     letter-spacing: 1.4px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 
 }
+
 .feedback-form {
     text-align: center;
 
@@ -235,43 +236,62 @@ header {
     line-height: 52px;
 }
 
-.button-send {
-    border-radius: 2px;
-    background: #477FB5;
-    display: flex;
-    padding: 0px 24px;
-    align-items: center;
-    gap: 8px;
-}
+
 
 .information {
     width: 100%;
     max-width: 460px;
     margin-inline: auto;
-    
-    
-    
+
+
+
 }
+.input-container {
+    border: 1px solid #DEE2E6;
+    position: relative;
+    height: 90px;
+}
+
+.input-container label {
+    text-align: left;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+.input-container input {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    border: none;
+    padding: 20px 12px 5px;
+
+}
+
 .row-inputes {
     overflow: hidden;
     margin-bottom: 10px;
-    
+
 }
+
 .row-inputes .input-container {
     float: left;
     width: 49%;
+    border-radius: 2px;
+    height: 58px;
 
 }
+
 /* .row-inputes .input-container:first-child {
     margin-right: 10px;
 } */
 .row-inputes .input-container:last-child {
-float: right;
+    float: right;
 }
-.input-container input {
-    width: 100%;
-    height: 128px;
+
+.button-send {
+
+    margin-top: 32px;
+    list-style: none;
+
 }
-.row-inputes input {
-    height: 58px;
-}
+
