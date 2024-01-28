@@ -11,11 +11,41 @@ h5,
 h6 {
   margin: 0;
 }
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #363636;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+input::-ms-input-placeholder,
+textarea::placeholder {
+  /* Edge 12-18 */
+  color: #363636;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.width-container {
+  max-width: 1440px;
+  padding-inline: 120px;
+  margin-inline: auto;
+  padding-bottom: 120px;
+}
 
 header {
   overflow: hidden;
-  padding-left: 120px;
-  padding-right: 120px;
   margin-bottom: 100px;
   min-height: 60px;
 }
@@ -128,18 +158,15 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 32px;
 }
 
 .section-1 ul {
   margin-bottom: 64px;
   margin-top: 32px;
+  max-width: 432px;
 }
 
-.section-1 {
-  padding-left: 120px;
-  padding-right: 120px;
-}
 
 .section-1 h1 {
   color: #263640;
@@ -147,15 +174,44 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
+  
 }
 
-.section-1 li {
-  color: #333;
+.section-1 .help-bth {
+  color: #FFF;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 28px;
-  width: 481px;
+  font-weight: 700;
+  line-height: 40px;
+  border-radius: 2px;
+  background: #477FB5;
+  border: none;
+  padding-inline: 24px;
+  text-align: center;
+  margin-right: 16px;
+}
+
+.section-1 .like-img {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.section-1 .get-help-bth {
+  color: #477FB5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  border-radius: 2px;
+  background: #e1f0ff;
+  border: none;
+  padding-inline: 24px;
+  text-align: center;
+}
+
+.section-2 {
+  padding-bottom: 56px;
+  padding-left: 120px;
 }
 
 .section-2 li {
@@ -165,17 +221,26 @@ header {
   font-weight: 300;
   line-height: 28px;
   list-style: none;
+  
 }
 
 .photo-list {
   list-style: none;
   overflow: hidden;
+  background-color: #ecf6ff;
+  font-size: 0;
+  
 }
 
 .photo-list-item {
-  float: left;
-  width: 33.3%;
+  display: inline-block;
+  width: 24%;
+  margin-right: 40px; 
 }
+.photo-list-item:nth-child(3),.photo-list-item:nth-child(6) {
+  margin-right: 0;
+}
+
 
 .description-photo-list-container {
   margin-top: 64px;
@@ -187,11 +252,11 @@ header {
 
 .description-photo-list h1 {
   color: #263640;
-  font-size: 24px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .description-photo-list li {
@@ -200,18 +265,21 @@ header {
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
-  /* 175% */
+
 }
 
 .feedback-form p {
   color: #929a9f;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  margin: 0px;
+
+  padding-top: 90px;
 }
 
 .feedback-form {
@@ -225,6 +293,8 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
+  padding-bottom: 90px;
+
 }
 
 .information {
@@ -233,6 +303,7 @@ header {
   margin-bottom: 32px;
   margin-inline: auto;
 }
+
 .input-container {
   position: relative;
   /* border: 1px solid #dee2e6; */
@@ -247,6 +318,7 @@ header {
   position: absolute;
   top: 12px;
 }
+
 .input-container input {
   width: 100%;
   height: 58px;
@@ -305,4 +377,36 @@ header {
   border: none;
   line-height: 40px;
   min-width: 100px;
+}
+
+.adress ul {
+  text-align: center;
+  list-style: none;
+
+}
+
+.adress li {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  display: inline-block;
+}
+
+.adress li::after {
+  content: "";
+  border-radius: 8px;
+  background: #333;
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  margin-inline: 20px;
+}
+
+.adress li:last-child::after {
+  display: none;
 }
